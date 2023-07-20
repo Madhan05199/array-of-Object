@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+#cards{
+    margin:50px 0px;
+}
+.container{
+    width:1140px;
+    margin: auto;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.card img{
+    width:220px;
+    position: absolute;
+    right:-80px;
+    bottom:40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card{
+    width:280px;
+    box-shadow: 0px 0px  10px #888888,0px 2px  15px #dfdddd;
+    border-radius:10px;
+    background:linear-gradient(45deg, rgb(247,247,245),rgba(0,0,0,0.3));
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.background{
+    background:linear-gradient(to left,rgb(252,158,8),#F6CA04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+    height:220px;
+    position: relative;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
 }
 
-.App-link {
-  color: #61dafb;
+.title span{
+    color: white;
+    font-weight:bold;
+    font-size:25px;
+    letter-spacing:0.7px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title p{
+    margin-top:15px;
+    color:white;
+    font-size:9px;
+    letter-spacing:0.5px;
+}
+.content{
+background:linear-gradient(45deg, rgb(247,247,245),rgba(0,0,0,0.2));
+padding:15px;
+}
+.content p{
+    font-weight:bold;
+    font-size:21px;
+}
+
+.content span{
+    font-size:15px;
+    color:rgba(0,0,0,0.7);
+    font-weight:600;
+}
+.content .size{
+    border:2px solid rgba(0,0,0,0.4);
+    border-radius:5px;
+    width:65px;
+    padding:5px 5px;
+    margin-top:12px;
+    font-weight:bold;
+    text-align: center;
+    background-color:rgba(255,255,255,0.9);
+    color:#888888;
+    margin-bottom:10px;
+}
+.cart{
+    margin-top:15px;
+}
+.cart button{
+    width:100%;
+    display: inline-block;
+    padding:9px;
+    background-color:rgb(0,205,239);
+    border:0;
+    color:white;
+    border-radius:5px;
+    font-weight:bold;
+    cursor: pointer;
+}
+.bi-cart-check-fill{
+    font-size:20px;
+}
+
+.card .details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.amount{
+    text-align: center;
+}
+
+.amount span{
+    font-size: 30px;
+    color:green;
+    text-shadow:0px 0px  3px black
 }
